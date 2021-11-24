@@ -1,4 +1,4 @@
-package at.jonathan.projects_Basics;
+package at.jonathan.projectsBasics.loopUebungen;
 
 public class Loop_A2 {
     public static void main(String[] args) {

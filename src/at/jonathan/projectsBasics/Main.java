@@ -1,4 +1,4 @@
-package at.jonathan.projects_Basics;
+package at.jonathan.projectsBasics;
 
 import java.util.Random;
 

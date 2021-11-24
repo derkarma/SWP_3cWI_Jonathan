@@ -1,6 +1,5 @@
-package at.jonathan.projects_Uebungen;
+package at.jonathan.projectsUebungen;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Bankomat {

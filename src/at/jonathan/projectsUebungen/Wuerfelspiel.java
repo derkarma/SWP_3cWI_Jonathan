@@ -1,4 +1,4 @@
-package at.jonathan.projects_Uebungen;
+package at.jonathan.projectsUebungen;
 
 import java.util.Random;
 
