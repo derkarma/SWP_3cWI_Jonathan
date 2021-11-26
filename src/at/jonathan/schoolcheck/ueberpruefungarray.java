@@ -11,11 +11,11 @@ public class ueberpruefungarray {
         String[] array2 = {"geht", "rennt", "fährt"};
         String[] array3 = {"nach Hause", "zur Schule", "ins Büro", "zur Party"};
 
-        Scanner platzhalter = new Scanner(System.in);
+        Scanner fullPhrase = new Scanner(System.in);
         Random random = new Random();
 
-        int select = platzhalter.nextInt();
-        for (int i = 0; i < platzhalter.nextInt(); i++) {
+        int select = fullPhrase.nextInt();
+        for (int i = 0; i < fullPhrase.nextInt(); i++) {
 
             int randomArray1 = i + random.nextInt(2);
             int randomArray2 = i + random.nextInt(3);
@@ -27,11 +27,6 @@ public class ueberpruefungarray {
 
             System.out.println(array1[phrase1] + array2[phrase2] + array3[phrase3]);
         }
-
-
-
-
-
 
 
     }
