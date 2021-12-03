@@ -13,21 +13,34 @@ public class caesarencryption {
         System.out.println("Text den Sie verschlüsseln möchten eingeben");
         String text = scanner.nextLine();
 
-        System.out.println("Eingeben um wie viele Stellen sie den Text verschieben möchten (1-10)");
+
+        System.out.println("Eingeben um wie viele Stellen sie den Text verschieben möchten (1-15)");
         int shift = scanner.nextInt();
 
-        if (shift >= 1 && shift <= 10);
+        if (shift >= 1 && shift <= 15) ;
 
         char[] firstArray = text.toCharArray();
+        char[] encrypted = wordEncrypted(shift, firstArray);
+
+        System.out.println("Ihr Wort verschlüsselt:");
+
+        for (int i = 0; i < encrypted.length; i++) {
+            System.out.println(encrypted[i]);
+        }
+
+        } else System.out.println("Die Verschiebung der Wörter liegt nur zwischen 1 - 15");
 
 
+        public static char[] wordEncrypted ( int offset, char[] charArray){
 
+            char[] arrayEncrypted = new char[charArray.length];
+            for (int i = 0; i < charArray.length; i++) {
+                int shifted = (charArray[i] + offset);
+                arrayEncrypted[i] = (char) (shifted);
 
-
-
-
-
+            }
+        }
 
 
     }
-}
+
