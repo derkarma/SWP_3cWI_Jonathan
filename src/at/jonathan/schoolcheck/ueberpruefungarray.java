@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class ueberpruefungarray {
     public static void main(String[] args) {
 
-        String[] array1 = {"Er", "Sie"};
-        String[] array2 = {"geht", "rennt", "fährt"};
-        String[] array3 = {"nach Hause", "zur Schule", "ins Büro", "zur Party"};
+        String[] personalPronoun = {"Er", "Sie"};
+        String[] verb = {"geht", "rennt", "fährt"};
+        String[] noun = {"nach Hause", "zur Schule", "ins Büro", "zur Party"};
 
         Scanner fullPhrase = new Scanner(System.in);
         Random random = new Random();
@@ -25,7 +25,7 @@ public class ueberpruefungarray {
             int phrase2 = randomArray2;
             int phrase3 = randomArray3;
 
-            System.out.println(array1[phrase1] + array2[phrase2] + array3[phrase3]);
+            System.out.println(personalPronoun[phrase1] + verb[phrase2] + noun[phrase3]);
         }
 
 
