@@ -26,7 +26,6 @@ public class caesarencryption {
 
         for (int i = 0; i < encrypted.length; i++) {
             System.out.println(encrypted[i]);
-        }
 
         } else System.out.println("Die Verschiebung der Wörter liegt nur zwischen 1 - 15");
 
