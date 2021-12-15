@@ -1,6 +1,6 @@
-package at.jonathan.stringUebungen;
+package at.jonathan.stringUebungen.stringHelper;
 
-public class StringHelper {
+public class Palindrome {
     public static void main(String[] args) {
 
         //Example for Palindrom: mom, dad, rotor, race car
