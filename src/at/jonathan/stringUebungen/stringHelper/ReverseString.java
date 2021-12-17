@@ -3,7 +3,7 @@ package at.jonathan.stringUebungen.stringHelper;
 public class ReverseString {
     public static void main(String[] args) {
 
-        String originalText = "Jobban ist cool";
+        String originalText = "Einfach hingeklatscht";
         String reverseText = "";
 
         for (int i = originalText.length() - 1; i >= 0; i--) {
