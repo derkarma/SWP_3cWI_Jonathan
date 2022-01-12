@@ -7,4 +7,11 @@ public class Car {
     public String brand;
     public String serialNumber;
     private String color;
+    public int fuelAmount;
+
+    public void drive(){
+        this.fuelAmount = this.fuelAmount - fuelConsumption;
+        System.out.println("Let's go");
+
+    }
 }
