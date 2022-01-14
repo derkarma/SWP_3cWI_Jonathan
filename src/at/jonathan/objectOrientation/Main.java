@@ -8,16 +8,19 @@ public class Main {
         c1.fuelConsumption = 15;
         c1.serialNumber = "B53556";
         c1.fuelAmount = 40;
+        c1.drivenRoute = 23;
+
 
         Car c2 = new Car();
         c2.brand = "Toyota";
         c2.fuelConsumption = 6;
         c2.serialNumber = "2600003";
         c2.fuelAmount = 30;
+        c2.drivenRoute = 3;
 
-        System.out.println(c1.fuelAmount);
         c1.drive();
-        System.out.println(c1.fuelAmount);
+        c1.drivingBreak();
+
 
 
     }
