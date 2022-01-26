@@ -1,4 +1,6 @@
-package at.jonathan.objectOrientation;
+package at.jonathan.objectOrientation.firstObject;
+
+import at.jonathan.objectOrientation.firstObject.Car;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +28,7 @@ public class Main {
         c1.drivingBreak();
         c1.turboBoost();
         c1.honk(4);
+        c2.getRemainingRange();
 
 
 

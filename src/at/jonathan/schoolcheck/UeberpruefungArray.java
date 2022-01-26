@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ueberpruefungarray {
+public class UeberpruefungArray {
     public static void main(String[] args) {
 
         String[] personalPronoun = {"Er", "Sie"};

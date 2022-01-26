@@ -1,4 +1,4 @@
-package at.jonathan.objectOrientation;
+package at.jonathan.objectOrientation.firstObject;
 
 public class Car {
 
@@ -41,7 +41,7 @@ public class Car {
     }
 
     public void getRemainingRange(){
-
+        System.out.println(this.tankVolume-this.fuelConsumption + " Liter sind noch übrigen um zu fahren ");
 
     }
 
