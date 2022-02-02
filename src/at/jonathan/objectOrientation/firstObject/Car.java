@@ -3,15 +3,70 @@ package at.jonathan.objectOrientation.firstObject;
 public class Car {
 
     // "public" and "private" not use later
-    public int fuelConsumption;
-    public String brand;
-    public String serialNumber;
-    public String color;
-    public int tankVolume;
-    public int fuelAmount;
-    public int drivenRoute;
+    private int fuelConsumption;
+    private String brand;
+    private String serialNumber;
+    private String color;
+    private int tankVolume;
+    private int fuelAmount;
+    private int drivenRoute;
 
 
+    public void setFuelConsumption(int fuelConsumption) {
+        fuelConsumption = fuelConsumption;
+    }
+
+    public int getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setTankVolume(int tankVolume) {
+        this.tankVolume = tankVolume;
+    }
+
+    public void setFuelAmount(int fuelAmount) {
+        this.fuelAmount = fuelAmount;
+    }
+
+    public void setDrivenRoute(int drivenRoute) {
+        this.drivenRoute = drivenRoute;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getTankVolume() {
+        return tankVolume;
+    }
+
+    public int getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public int getDrivenRoute() {
+        return drivenRoute;
+    }
 
     public Car(int fuelConsumption, String brand, String serialNumber, String color, int tankVolume, int fuelAmount, int drivenRoute){
         this.fuelConsumption = fuelConsumption;
