@@ -11,6 +11,20 @@ public class Car {
     public int fuelAmount;
     public int drivenRoute;
 
+
+
+    public Car(int fuelConsumption, String brand, String serialNumber, String color, int tankVolume, int fuelAmount, int drivenRoute){
+        this.fuelConsumption = fuelConsumption;
+        this.brand = brand;
+        this.serialNumber = serialNumber;
+        this.color = color;
+        this.tankVolume = tankVolume;
+        this.fuelAmount = fuelAmount;
+        this.drivenRoute = drivenRoute;
+
+
+    }
+
     //Methode
     public void drive() {
         this.fuelAmount = this.fuelAmount - fuelConsumption;
@@ -46,7 +60,6 @@ public class Car {
     }
 
 }
-
 
 
 //Füge eine Methode getRemainingRange() ein.
