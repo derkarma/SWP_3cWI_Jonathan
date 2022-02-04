@@ -5,7 +5,7 @@ import at.jonathan.objectOrientation.firstObject.Car;
 public class Main {
     public static void main(String[] args) {
 
-
+        Engine e1= new Engine(2,"Benz");
         Car c1 = new Car(15, "Batmobile","B53556","black",50,2,23);
         Car c2 = new Car(6,"Toyota","2600003","gold",40,30,3);
         Car c3 = new Car(17, "Opel", "1234O","green", 30,20, 9);

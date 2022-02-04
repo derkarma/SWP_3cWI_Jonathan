@@ -3,6 +3,7 @@ package at.jonathan.objectOrientation.firstObject;
 public class Car {
 
     // "public" and "private" not use later
+    private Engine engine;
     private int fuelConsumption;
     private String brand;
     private String serialNumber;
