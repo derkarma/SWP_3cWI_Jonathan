@@ -1,9 +1,13 @@
 package at.jonathan.objectOrientation.firstObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Car {
 
     // "public" and "private" not use later
     private Engine engine;
+    private List<RearMirror> mirrors;
     private int fuelConsumption;
     private String brand;
     private String serialNumber;
@@ -77,8 +81,13 @@ public class Car {
         this.tankVolume = tankVolume;
         this.fuelAmount = fuelAmount;
         this.drivenRoute = drivenRoute;
+        this.mirrors = new ArrayList<>();
 
 
+    }
+
+    public void addMirror(RearMirror rearMirror){
+        this.mirrors.add(rearMirror);
     }
 
     //Methode

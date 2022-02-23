@@ -4,6 +4,7 @@ public class Engine {
     public enum TYPE{DIESEL,OIL};
     private int horsePower;
     private TYPE type; //Diesel oder Benzin
+    private int speed;
 
     public Engine(int horsePower, TYPE type) {
         this.horsePower = horsePower;
@@ -25,5 +26,13 @@ public class Engine {
 
     public TYPE getType() {
         return type;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 }
