@@ -8,6 +8,7 @@ public class Car {
     // "public" and "private" not use later
     private Engine engine;
     private List<RearMirror> mirrors;
+    private List<Wire> wires;
     private int fuelConsumption;
     private String brand;
     private String serialNumber;
@@ -82,12 +83,23 @@ public class Car {
         this.fuelAmount = fuelAmount;
         this.drivenRoute = drivenRoute;
         this.mirrors = new ArrayList<>();
+        this.wires = new ArrayList<>();
 
 
     }
 
     public void addMirror(RearMirror rearMirror){
         this.mirrors.add(rearMirror);
+    }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
+
+    public void addWire(Wire wire){this.wires.add(wire);}
+
+    public List<Wire> getWires() {
+        return wires;
     }
 
     //Methode
