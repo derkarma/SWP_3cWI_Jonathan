@@ -1,4 +1,4 @@
-package at.jonathan.objectOrientation.firstObject;
+package at.jonathan.objectOrientation.Car;
 
 public class Engine {
     public enum TYPE{DIESEL,OIL};

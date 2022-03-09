@@ -1,16 +1,12 @@
-package at.jonathan.objectOrientation.firstObject;
+package at.jonathan.objectOrientation.Car;
 
 public class Wire {
-    private int tirePressure;
+    private double tirePressure;
     private String wireType;
 
-    public Wire(int tirePressure, String wireType) {
+    public Wire(double tirePressure, String wireType) {
         this.tirePressure = tirePressure;
         this.wireType = wireType;
-    }
-
-    public int getTirePressure() {
-        return tirePressure;
     }
 
     public void setTirePressure(int tirePressure) {
