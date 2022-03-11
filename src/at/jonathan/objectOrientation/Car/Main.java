@@ -1,6 +1,6 @@
 package at.jonathan.objectOrientation.Car;
 
-public class Main {
+public class  Main {
     public static void main(String[] args) {
 
         Engine e1= new Engine(2, Engine.TYPE.DIESEL);
