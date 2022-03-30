@@ -26,6 +26,8 @@ public class Remote {
        int newChargingStatus2 = this.batteries.get(1).getChargingStatus();
    }
 
+
+
    public void turnOff(){
        System.out.println("Kein Verbraucher angeschlossen");
    }
