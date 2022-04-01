@@ -4,10 +4,12 @@ public class Producer {
 
     private String name;
     private String countryOfOrigin;
+    private double rabatt;
 
-    public Producer(String name, String countryOfOrigin) {
+    public Producer(String name, String countryOfOrigin, double rabatt) {
         this.name = name;
         this.countryOfOrigin = countryOfOrigin;
+        this.rabatt = rabatt;
     }
 
     public String getName() {
@@ -24,5 +26,13 @@ public class Producer {
 
     public void setCountryOfOrigin(String countryOfOrigin) {
         this.countryOfOrigin = countryOfOrigin;
+    }
+
+    public double getRabatt() {
+        return rabatt;
+    }
+
+    public void setRabatt(double rabatt) {
+        this.rabatt = rabatt;
     }
 }

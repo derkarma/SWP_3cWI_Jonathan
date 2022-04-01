@@ -5,13 +5,24 @@ public class Car {
     private String color;
     private int fullSpeed;
     private int basePrice;
-    private int basicConsumption;
+    private double basicConsumption;
+    private Engine engine;
+    private Producer producer;
 
-    public Car(String color, int fullSpeed, int basePrice, int basicConsumption) {
+    public Car(String color, int fullSpeed, int basePrice, double basicConsumption, Engine engine, Producer producer) {
         this.color = color;
         this.fullSpeed = fullSpeed;
         this.basePrice = basePrice;
         this.basicConsumption = basicConsumption;
+        this.engine = engine;
+        this.producer = producer;
+    }
+
+    public void price(){
+        double rabatt = this.producer.getRabatt();
+        double price = basePrice-(basePrice*rabatt);
+        System.out.println("Preis ohne Rabatt: " + basePrice);
+        System.out.println("Preis mit Rabatt: " + price);
     }
 
     public String getColor() {
@@ -38,7 +49,7 @@ public class Car {
         this.basePrice = basePrice;
     }
 
-    public int getBasicConsumption() {
+    public double getBasicConsumption() {
         return basicConsumption;
     }
 
