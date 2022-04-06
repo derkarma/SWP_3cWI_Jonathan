@@ -8,6 +8,17 @@ public class Car {
     private double basicConsumption;
     private Engine engine;
     private Producer producer;
+    private double drivenKilometers;
+
+    public Car(String color, int fullSpeed, int basePrice, double basicConsumption, Engine engine, Producer producer, double drivenKilometers) {
+        this.color = color;
+        this.fullSpeed = fullSpeed;
+        this.basePrice = basePrice;
+        this.basicConsumption = basicConsumption;
+        this.engine = engine;
+        this.producer = producer;
+        this.drivenKilometers = drivenKilometers;
+    }
 
     public Car(String color, int fullSpeed, int basePrice, double basicConsumption, Engine engine, Producer producer) {
         this.color = color;
@@ -23,6 +34,22 @@ public class Car {
         double price = basePrice-(basePrice*rabatt);
         System.out.println("Preis ohne Rabatt: " + basePrice);
         System.out.println("Preis mit Rabatt: " + price);
+    }
+
+    public void fuelConsumption(){
+
+
+        if(drivenKilometers > 50000){
+            double consumptionPercent = 1.098;
+            setBasicConsumption((int) (basicConsumption*consumptionPercent));
+
+            double newFuelConsumption1 = getBasicConsumption();
+            System.out.println(newFuelConsumption1);
+        }else{
+            double newFuelConsumption2 = getBasicConsumption();
+            System.out.println(newFuelConsumption2);
+        }
+
     }
 
     public String getColor() {
