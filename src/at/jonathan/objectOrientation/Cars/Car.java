@@ -9,8 +9,10 @@ public class Car {
     private Engine engine;
     private Producer producer;
     private double drivenKilometers;
+    private int fuelAmount;
+    private int fuelConsumption;
 
-    public Car(String color, int fullSpeed, int basePrice, double basicConsumption, Engine engine, Producer producer, double drivenKilometers) {
+    public Car(String color, int fullSpeed, int basePrice, double basicConsumption, Engine engine, Producer producer, double drivenKilometers, int fuelAmount, int fuelConsumption) {
         this.color = color;
         this.fullSpeed = fullSpeed;
         this.basePrice = basePrice;
@@ -18,15 +20,18 @@ public class Car {
         this.engine = engine;
         this.producer = producer;
         this.drivenKilometers = drivenKilometers;
+        this.fuelAmount = fuelAmount;
+        this.fuelConsumption = fuelConsumption;
     }
 
-    public Car(String color, int fullSpeed, int basePrice, double basicConsumption, Engine engine, Producer producer) {
-        this.color = color;
-        this.fullSpeed = fullSpeed;
-        this.basePrice = basePrice;
-        this.basicConsumption = basicConsumption;
-        this.engine = engine;
-        this.producer = producer;
+    public void drive() {
+        this.fuelAmount = this.fuelAmount - fuelConsumption;
+        System.out.println("Let's go");
+
+    }
+
+    public void stop(){
+        System.out.println("I am breaking ...car");
     }
 
     public void price(){
