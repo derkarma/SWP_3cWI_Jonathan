@@ -7,6 +7,10 @@ public class Square extends Figure {
     public Square(String name,double ValueA) {
         super(name);
         this.ValueA = ValueA;
+    }
 
+    @Override
+    public double getArea() {
+        return this.ValueA * this.ValueA;
     }
 }
